@@ -1,1 +1,0 @@
-Planting trees on lands that were previously not forest
