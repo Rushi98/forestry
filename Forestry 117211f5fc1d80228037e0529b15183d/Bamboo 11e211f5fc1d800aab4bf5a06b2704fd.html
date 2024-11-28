@@ -1,0 +1,687 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Bamboo</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="11e211f5-fc1d-800a-ab4b-f5a06b2704fd" class="page sans"><header><h1 class="page-title">Bamboo</h1><p class="page-description"></p></header><div class="page-body"><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">About</summary><div class="indented"><ul id="11e211f5-fc1d-8027-9d8e-eefff4c75045" class="bulleted-list"><li style="list-style-type:disc">It is perennial grass</li></ul><ul id="11e211f5-fc1d-80e6-badf-c93a77efb386" class="bulleted-list"><li style="list-style-type:disc">Stem arises from underground rhizome</li></ul><ul id="11e211f5-fc1d-80c6-9bb4-e6cec5d09137" class="bulleted-list"><li style="list-style-type:disc">Stamp – a.k.a. “clums” – usually hollow but solid in <em>D. strictus</em></li></ul><ul id="11e211f5-fc1d-80f8-a756-e90d6a9652a2" class="bulleted-list"><li style="list-style-type:disc">Group of clums → “Clumps”</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Distribution</summary><div class="indented"><ul id="11e211f5-fc1d-8032-a1f4-c0d1d27b6e63" class="bulleted-list"><li style="list-style-type:disc">128 species in India, <em>Dendrocalamus strictus </em>- most important and widely distributed</li></ul><ul id="11e211f5-fc1d-801a-b530-f5cf7f3b04ae" class="bulleted-list"><li style="list-style-type:disc">Usually prefers moist site</li></ul><ul id="11e211f5-fc1d-80a0-b0ae-dfaf566e0cac" class="bulleted-list"><li style="list-style-type:disc">As per Champion<ul id="11e211f5-fc1d-80b6-8e72-db952aa63049" class="bulleted-list"><li style="list-style-type:circle">Tropical (moist and dry)</li></ul><ul id="11e211f5-fc1d-808a-b676-e9af53c6556e" class="bulleted-list"><li style="list-style-type:circle">Mountain subtropical</li></ul><ul id="11e211f5-fc1d-8026-9852-d4d07639b218" class="bulleted-list"><li style="list-style-type:circle">Mountain temperate</li></ul><ul id="11e211f5-fc1d-80b0-b626-c191d424a3d3" class="bulleted-list"><li style="list-style-type:circle">Alpine</li></ul></li></ul><table id="11e211f5-fc1d-8070-b752-d62dec35d2c5" class="simple-table"><thead class="simple-table-header"><tr id="5c4e692a-b3c2-4881-a56c-993911e53c6a"><th id="K|&gt;R" class="simple-table-header-color simple-table-header"> region</th><th id="iy`P" class="simple-table-header-color simple-table-header"> species</th></tr></thead><tbody><tr id="bfbff871-e919-4b67-b187-f190b9c3c2c5"><td id="K|&gt;R" class=""> Northwest India</td><td id="iy`P" class=""><em>Dendrocalamus strictus</em></td></tr><tr id="37ec88c6-d81a-421b-934e-51936d8bd481"><td id="K|&gt;R" class=""> bihar, East UP</td><td id="iy`P" class=""><em>Bambusa balcooa</em></td></tr><tr id="11e211f5-fc1d-80bf-9a4b-ebc92bee9349"><td id="K|&gt;R" class=""> Himalayas</td><td id="iy`P" class=""><em>Arundinaria</em></td></tr><tr id="11e211f5-fc1d-804d-a04d-e894da979252"><td id="K|&gt;R" class=""> West India, central India, Deccan plateaus</td><td id="iy`P" class=""><em>Bambusa bambos, Dendrocalamus strictus</em></td></tr></tbody></table></div></details><div><h1 id="11e211f5-fc1d-80c3-9083-e19b281ca38e" class="">Utility</h1><ul id="11e211f5-fc1d-80e9-abf9-c2c7e57c7068" class="bulleted-list"><li style="list-style-type:disc">Food<ol type="1" id="11e211f5-fc1d-8039-81f0-d1bf2780b415" class="numbered-list" start="1"><li>Seed and shoot our eaten – pickle</li></ol><ol type="1" id="11e211f5-fc1d-8017-b4cd-dc7fa2e5d473" class="numbered-list" start="2"><li>In Sikkim, people make beer from seed</li></ol><ol type="1" id="11e211f5-fc1d-80ba-af96-e59e30ab154a" class="numbered-list" start="3"><li>Edible Bamboo species - <em>B. multiplex, B. polymorpha, P. nuda.</em></li></ol></li></ul><ul id="11e211f5-fc1d-805c-bf4d-cc3360f503a5" class="bulleted-list"><li style="list-style-type:disc">Fodder<p id="11e211f5-fc1d-80bb-99ff-d496e26f83a6" class="">Leaves – rich in vitamin, mineral – eaten by elephant, panda</p></li></ul><ul id="11e211f5-fc1d-80c8-a588-d1563de90b62" class="bulleted-list"><li style="list-style-type:disc">Medicine<ul id="11e211f5-fc1d-8081-8d9a-d060cf495d54" class="bulleted-list"><li style="list-style-type:circle">Stem and leaves of <em>B. bambos – </em>treat leukoderma, blood purifier</li></ul><ul id="11e211f5-fc1d-8051-b29e-e15d8994f451" class="bulleted-list"><li style="list-style-type:circle">Silicious material from stem → treat asthma, cough</li></ul></li></ul><ul id="11e211f5-fc1d-808c-87fc-fc3feef7f8c0" class="bulleted-list"><li style="list-style-type:disc">Industrial<ul id="11e211f5-fc1d-8052-9afa-f52fe9ffbbbe" class="bulleted-list"><li style="list-style-type:circle">Paper and pulp</li></ul><ul id="11e211f5-fc1d-804c-ad1f-e06b316d76d7" class="bulleted-list"><li style="list-style-type:circle">Plywood</li></ul><ul id="11e211f5-fc1d-80aa-a860-f3b08641a911" class="bulleted-list"><li style="list-style-type:circle">Agricultural implements</li></ul><ul id="11e211f5-fc1d-8064-aca5-d62c596d86b7" class="bulleted-list"><li style="list-style-type:circle">House construction - timber</li></ul><ul id="11e211f5-fc1d-8084-ac7c-d97697c63b42" class="bulleted-list"><li style="list-style-type:circle">Furniture</li></ul></li></ul><ul id="11e211f5-fc1d-80bb-8ece-f6ade71e0d9c" class="bulleted-list"><li style="list-style-type:disc">Artefacts<ul id="11e211f5-fc1d-8030-996f-e23e61d5bdfe" class="bulleted-list"><li style="list-style-type:circle">Baskets</li></ul><ul id="11e211f5-fc1d-804b-9abc-d97f6e0cb913" class="bulleted-list"><li style="list-style-type:circle">Walking stick</li></ul></li></ul><ul id="11e211f5-fc1d-808b-aa63-e6942e7e74f5" class="bulleted-list"><li style="list-style-type:disc">Firewood<ul id="11e211f5-fc1d-8085-8c09-c476a79a2449" class="bulleted-list"><li style="list-style-type:circle">Calorie value &gt; 7000 cal/kg</li></ul></li></ul><ul id="11e211f5-fc1d-80f8-954d-c32e1d09770e" class="bulleted-list"><li style="list-style-type:disc">Environmental utility<ul id="11e211f5-fc1d-80ce-b833-ea419e5430ce" class="bulleted-list"><li style="list-style-type:circle">Releases 35% more <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">O</mi><msub><mpadded width="0px"><mphantom><mi>X</mi></mphantom></mpadded><mpadded height="0px"><mn>2</mn></mpadded></msub></mrow><annotation encoding="application/x-tex">\ce{O2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathrm">O</span><span class="mord"><span class="mord"><span class="mord rlap"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord mathnormal" style="margin-right:0.07847em;color:transparent;">X</span></span></span><span class="fix"></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.15em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span></li></ul><ul id="11e211f5-fc1d-8053-bab1-c13aa4b6840f" class="bulleted-list"><li style="list-style-type:circle">1 L of bamboo sequesters 12 ton <style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">O</mi></mrow><msub><mpadded width="0px"><mphantom><mi>X</mi></mphantom></mpadded><mpadded height="0px"><mn>2</mn></mpadded></msub></mrow><annotation encoding="application/x-tex">\ce{CO2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">CO</span></span><span class="mord"><span class="mord"><span class="mord rlap"><span class="inner"><span class="mord" style="color:transparent;"><span class="mord mathnormal" style="margin-right:0.07847em;color:transparent;">X</span></span></span><span class="fix"></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.15em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span></li></ul><ul id="11e211f5-fc1d-80c4-92d4-c83c7dc5f567" class="bulleted-list"><li style="list-style-type:circle">Cleans Sewage water</li></ul><ul id="11e211f5-fc1d-800b-a3d7-e4161359b7aa" class="bulleted-list"><li style="list-style-type:circle">Decontaminates heavy metal pollution</li></ul></li></ul></div><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">climate and soil</summary><div class="indented"><ul id="11e211f5-fc1d-80f2-b816-e8811e8b7f12" class="bulleted-list"><li style="list-style-type:disc">Rainfall &gt; 100 cm</li></ul><ul id="11e211f5-fc1d-8066-a8b1-c7e3556afcfd" class="bulleted-list"><li style="list-style-type:disc">Temperature: 5–45°C</li></ul><ul id="11e211f5-fc1d-803c-bc88-ffd3cf9225a0" class="bulleted-list"><li style="list-style-type:disc">Prefer alluvial soil</li></ul><ul id="11e211f5-fc1d-8075-94ab-e4d6738fc495" class="bulleted-list"><li style="list-style-type:disc">Avoids – clay soil, alkaline soil</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Classification of bamboo</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Based on appearance</summary><div class="indented"><ul id="11e211f5-fc1d-8015-82e5-d973d46520bc" class="toggle"><li><details open=""><summary>Woody</summary><ul id="11e211f5-fc1d-806e-b9cf-d2e4303dd124" class="bulleted-list"><li style="list-style-type:disc">lignified culms</li></ul><ul id="11e211f5-fc1d-80ca-8f8e-d74ffb3b6dd4" class="bulleted-list"><li style="list-style-type:disc">Height &gt; 1m</li></ul></details></li></ul><ul id="11e211f5-fc1d-8079-8412-ca8e02071d9d" class="toggle"><li><details open=""><summary>Herbaceous</summary><ul id="11e211f5-fc1d-80e3-866c-d5fc034f9718" class="bulleted-list"><li style="list-style-type:disc">Herbaceous culms</li></ul><ul id="11e211f5-fc1d-80eb-8a84-ddfcafab1d31" class="bulleted-list"><li style="list-style-type:disc">Height &lt; 1m</li></ul></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Based on rhizome</summary><div class="indented"><ul id="11e211f5-fc1d-805d-8090-c5626b7408d5" class="toggle"><li><details open=""><summary>Monopiodal</summary><ul id="11e211f5-fc1d-80d1-9344-d34d84701817" class="bulleted-list"><li style="list-style-type:disc">each rhizome has one branch</li></ul><ul id="11e211f5-fc1d-8051-90fd-d61247d0495d" class="bulleted-list"><li style="list-style-type:disc">FIGURE</li></ul></details></li></ul><ul id="11e211f5-fc1d-80c2-8c78-f3fa9feddf29" class="toggle"><li><details open=""><summary>Symboidal</summary><p id="11e211f5-fc1d-8013-93b2-c3367838dd3b" class="">FIGURE</p></details></li></ul><ul id="11e211f5-fc1d-8040-a479-d2f4c13b9913" class="toggle"><li><details open=""><summary>Amphipoidal</summary><ul id="11e211f5-fc1d-80af-be9a-c2e125cfa83a" class="bulleted-list"><li style="list-style-type:disc">Intermingled rhizomes</li></ul></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Based on habitat</summary><div class="indented"><ul id="11e211f5-fc1d-80eb-8a2a-e2d23c3f7a84" class="toggle"><li><details open=""><summary>Tree bamboos</summary><ul id="11e211f5-fc1d-80a3-81b3-dd92bf3b72ac" class="bulleted-list"><li style="list-style-type:disc">tall, woody</li></ul><ul id="11e211f5-fc1d-809f-ac99-fdfd08a0485c" class="bulleted-list"><li style="list-style-type:disc"><em>Dendrocalamus, Bambusa</em></li></ul></details></li></ul><ul id="11e211f5-fc1d-8021-bd8c-f8c4eef7bd1a" class="toggle"><li><details open=""><summary>Reeds</summary><ul id="11e211f5-fc1d-809b-bbda-df42472a57e6" class="bulleted-list"><li style="list-style-type:disc">Medium size</li></ul><ul id="11e211f5-fc1d-8058-b1a7-f3a87264c938" class="bulleted-list"><li style="list-style-type:disc">Short neck</li></ul></details></li></ul><ul id="11e211f5-fc1d-8096-805a-c7e226c3c758" class="toggle"><li><details open=""><summary>Staggler</summary><p id="11e211f5-fc1d-8057-b032-dd660c7c5b41" class="">Medium size</p></details></li></ul><ul id="11e211f5-fc1d-804a-98e4-c3af728206bf" class="toggle"><li><details open=""><summary>Climber</summary><ul id="11e211f5-fc1d-8041-afb4-e9d27cf88b8d" class="bulleted-list"><li style="list-style-type:disc">After a certain height clums need support of neighboring plant</li></ul></details></li></ul><ul id="11e211f5-fc1d-8065-9af7-f9fc5a3a83f6" class="toggle"><li><details open=""><summary>Shrub bamboos</summary><p id="11e211f5-fc1d-80f5-a86c-d444d30a861e" class="">&lt; 4m height</p></details></li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Flowering</summary><div class="indented"><ul id="11e211f5-fc1d-802e-98b3-f224b8c6dc5e" class="bulleted-list"><li style="list-style-type:disc">Bamboo is monocarpic – seeds once in lifetime</li></ul><ul id="11e211f5-fc1d-80da-9c5c-ee8ddadc8ce1" class="bulleted-list"><li style="list-style-type:disc">Herbaceous bamboo – flowers annually</li></ul><ul id="11e211f5-fc1d-8000-8bc2-dc240069e5f2" class="bulleted-list"><li style="list-style-type:disc">Woody Bamboo – flowers infrequently</li></ul><ul id="11e211f5-fc1d-80b4-bd19-f858c6b37025" class="bulleted-list"><li style="list-style-type:disc">Due to less flowering, seed availability is less therefore reproduction is via vegetative propagation,</li></ul><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Types of flowering</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Annual</summary><div class="indented"><ul id="11e211f5-fc1d-80fe-8b8a-d865bce19ba5" class="bulleted-list"><li style="list-style-type:disc">Flowers every year</li></ul><ul id="11e211f5-fc1d-804b-b75d-fc037865efda" class="bulleted-list"><li style="list-style-type:disc">No death after flowering</li></ul><ul id="11e211f5-fc1d-80b5-97a2-f9af39d4a305" class="bulleted-list"><li style="list-style-type:disc"><em>Arundinaria weightiana</em></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Periodic</summary><div class="indented"><ul id="11e211f5-fc1d-8084-b262-c3e480f6db64" class="bulleted-list"><li style="list-style-type:disc">Most cases</li></ul><ul id="11e211f5-fc1d-80c8-927e-ce7a9f1bc463" class="bulleted-list"><li style="list-style-type:disc"><em>D. strictus</em> – 30–70 year flowering interval</li></ul><ul id="11e211f5-fc1d-8016-a52c-f85d36d6e2ad" class="bulleted-list"><li style="list-style-type:disc"><em>D. hamiltoni </em>– 30–40 year interval</li></ul><ul id="11e211f5-fc1d-80fa-8caa-f5e6d00ade74" class="bulleted-list"><li style="list-style-type:disc">Die after flowering</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Sporadic</summary><div class="indented"><ul id="11e211f5-fc1d-8065-a5ab-d06a03c1a7ad" class="bulleted-list"><li style="list-style-type:disc">Irregular flowering</li></ul><ul id="11e211f5-fc1d-802a-a21f-c61f30af4389" class="bulleted-list"><li style="list-style-type:disc">few culms in a clump</li></ul><ul id="11e211f5-fc1d-8003-80fe-c2b5a2811326" class="bulleted-list"><li style="list-style-type:disc"><em>D. hamiltoni</em></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Gregarious</summary><div class="indented"><ul id="11e211f5-fc1d-8069-9cae-ef2f4a2ceec7" class="bulleted-list"><li style="list-style-type:disc">flowering proceeds from one end of forest to another like a wave</li></ul><ul id="11e211f5-fc1d-802b-93b8-ea529781975c" class="bulleted-list"><li style="list-style-type:disc">entire forest completes flowering cycle in 2–3 years</li></ul><ul id="11e211f5-fc1d-8015-9e40-d79ec886f350" class="bulleted-list"><li style="list-style-type:disc">Dies after flowering</li></ul><p id="11e211f5-fc1d-80ef-9db3-c6fca4c77b4a" class="">
+</p></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Why Bamboo die after flowering?</summary><div class="indented"><p id="11e211f5-fc1d-80c7-8be6-eac1ae392d0a" class="">Not clearly understood – two thoughts</p><ol type="1" id="11e211f5-fc1d-805b-a0f5-c2f3035db774" class="numbered-list" start="1"><li>Seed production requires immense energy → causes internal stress → death</li></ol><ol type="1" id="11e211f5-fc1d-8054-a126-c16282890f5d" class="numbered-list" start="2"><li>Parental bamboo dies by creating suitable environment for emerging seedling from seed → seedling face less competition</li></ol></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Identification of bamboo</summary><div class="indented"><p id="11e211f5-fc1d-80f7-9296-db3b05e8e2ee" class="">Difficult difficult to identify between spaces due to similar morphology</p><p id="11e211f5-fc1d-8086-890d-d298b3ca6287" class="">Identification via – rhizome, young shoot, culm, branch, fruit, flower</p></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Natural regeneration</summary><div class="indented"><ul id="11e211f5-fc1d-80c2-805e-e25d95c97a0d" class="bulleted-list"><li style="list-style-type:disc">Occurs after gregarious flowering</li></ul><ul id="11e211f5-fc1d-803f-9cc7-fd84d9bb5cd4" class="bulleted-list"><li style="list-style-type:disc">Seedling emerges in abundance after rain<ul id="11e211f5-fc1d-809b-a870-fa7ff2e24174" class="bulleted-list"><li style="list-style-type:circle">Only a few culms established into mature bamboo</li></ul><ul id="11e211f5-fc1d-80a0-a452-eb3e63827e03" class="bulleted-list"><li style="list-style-type:circle">It takes 5–10 years</li></ul></li></ul><ul id="11e211f5-fc1d-805e-8173-d1d985f3feb6" class="bulleted-list"><li style="list-style-type:disc">Threats – grazing, fire</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Artificial regeneration</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Seed</summary><div class="indented"><ul id="11e211f5-fc1d-80fb-b870-e16ae7f79b6f" class="bulleted-list"><li style="list-style-type:disc">Collect seed from forest after maturity<ul id="11e211f5-fc1d-80c2-9340-c72152e1d04c" class="bulleted-list"><li style="list-style-type:circle">Shake culms</li></ul><ul id="11e211f5-fc1d-80c2-a48a-cebb16a1f708" class="bulleted-list"><li style="list-style-type:circle">Spread cloth on ground</li></ul></li></ul><ul id="11e211f5-fc1d-8091-938b-fa9bb45beb41" class="toggle"><li><details open=""><summary>Direct sowing</summary><ul id="11e211f5-fc1d-80b6-ab20-eda37d547dc6" class="bulleted-list"><li style="list-style-type:disc">Place seed 10–15 cm deep inside soil</li></ul><ul id="11e211f5-fc1d-80c8-80ed-e2ade96f47e1" class="bulleted-list"><li style="list-style-type:disc">Use 1 – 1.5 kg seed per ha</li></ul></details></li></ul><ul id="11e211f5-fc1d-8031-8081-fc38bda03b6e" class="toggle"><li><details open=""><summary>Nursery</summary><ul id="11e211f5-fc1d-8019-9c00-df6a3d369ba4" class="bulleted-list"><li style="list-style-type:disc">Soak seed 24–48 hours for germination</li></ul><ul id="11e211f5-fc1d-80b0-af0a-c189f2726920" class="bulleted-list"><li style="list-style-type:disc">Create 1-2 cm thick sand bed</li></ul><ul id="11e211f5-fc1d-800f-a845-f5df95b86cdc" class="bulleted-list"><li style="list-style-type:disc">Irrigation two times a day</li></ul><ul id="11e211f5-fc1d-808e-bdc8-f3ee8dcd4a12" class="bulleted-list"><li style="list-style-type:disc">Settling of 10 cm is put in to poly bag</li></ul><ul id="11e211f5-fc1d-80f1-ac3c-c8c4fc031501" class="bulleted-list"><li style="list-style-type:disc">Seedling of 30–45 cm can be transplanted to field</li></ul></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Vegetative propagation</summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Rhizome cutting</summary><div class="indented"><ul id="11e211f5-fc1d-80a2-b9ed-da16cf2e6160" class="bulleted-list"><li style="list-style-type:disc">10–15 cm rhizome cut from mature rhizome </li></ul><ul id="11e211f5-fc1d-8075-9627-d1ffd4fe1d67" class="bulleted-list"><li style="list-style-type:disc">Better than direct sowing</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Rhizome planting</summary><div class="indented"><ul id="11e211f5-fc1d-8062-9eb7-c491b6eb0970" class="bulleted-list"><li style="list-style-type:disc">rhizome mass is divided into small division → directly planted in field</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Offset</summary><div class="indented"><ul id="11e211f5-fc1d-8042-b275-fed546b3bf30" class="bulleted-list"><li style="list-style-type:disc">Culms are slant cut at 1–1.2 m above ground with rhizome and root intact</li></ul><ul id="11e211f5-fc1d-8056-ab8a-dc63a14a539a" class="bulleted-list"><li style="list-style-type:disc">They are directly planted in field at 7.5 m x 7.5 m spacing</li></ul><ul id="11e211f5-fc1d-802b-bd7b-d59ee215d1c4" class="bulleted-list"><li style="list-style-type:disc">Used when there is no seed</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Entire culm planting</summary><div class="indented"><ul id="11e211f5-fc1d-80b6-a40d-d7020c7ed963" class="bulleted-list"><li style="list-style-type:disc">One year old culm is removed without any damage</li></ul><ul id="11e211f5-fc1d-8046-83f1-d55bfa52e76f" class="bulleted-list"><li style="list-style-type:disc">Placed in raised nursery bed with loose loamy soil of 2–3 cm thickness.</li></ul><ul id="11e211f5-fc1d-800c-9780-da5c8228f1d2" class="bulleted-list"><li style="list-style-type:disc">Shoot emerges in a month</li></ul><ul id="11e211f5-fc1d-80f7-b6ab-da4dc89a0650" class="bulleted-list"><li style="list-style-type:disc">Each rooted node with shoot is separated and planted in polybag</li></ul><ul id="11e211f5-fc1d-804c-8056-c17ff10aefb4" class="bulleted-list"><li style="list-style-type:disc">Seedling &gt; 30cm height can be transplanted to field</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Layering</summary><div class="indented"><ul id="11e211f5-fc1d-805b-ba47-e6aa030f6d3b" class="bulleted-list"><li style="list-style-type:disc">Culm is partially cut at base</li></ul><ul id="11e211f5-fc1d-80fd-aac0-f573b79474d4" class="bulleted-list"><li style="list-style-type:disc">Culm is then bend down and buried into soil</li></ul><ul id="11e211f5-fc1d-8036-899b-ebe8d61d570b" class="bulleted-list"><li style="list-style-type:disc">Sprouting will arise</li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Micropropagation</summary><div class="indented"><ul id="11e211f5-fc1d-809c-952b-ccbbc7c4d1f2" class="bulleted-list"><li style="list-style-type:disc">Earlier explants are collected from seedlings</li></ul><ul id="11e211f5-fc1d-8076-8d7e-e086da816123" class="bulleted-list"><li style="list-style-type:disc">Now standard technique available for - <em>B. bambos, D. hamiltoni, D. strictus</em></li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Establishment of bamboo plantation</summary><div class="indented"><ul id="11e211f5-fc1d-8027-a54e-ce3d673eb886" class="bulleted-list"><li style="list-style-type:disc">Most cultivate - <em>Bambosa bambos, D. strictus</em></li></ul><ul id="11e211f5-fc1d-807a-8950-fbb940fff960" class="bulleted-list"><li style="list-style-type:disc">Clear plantation site - remove weed, termite and insects</li></ul><ul id="11e211f5-fc1d-806c-b07f-d2940f2e5a1c" class="bulleted-list"><li style="list-style-type:disc">Spacing<ul id="11e211f5-fc1d-80cb-9432-f8c01bb6f1fc" class="bulleted-list"><li style="list-style-type:circle">Smaller species: 4x4 m</li></ul><ul id="11e211f5-fc1d-8038-a4b2-da24d6981954" class="bulleted-list"><li style="list-style-type:circle">Larger species: 10 x 10 m</li></ul></li></ul><ul id="11e211f5-fc1d-80bc-913b-e18e06d0e976" class="bulleted-list"><li style="list-style-type:disc">Dig pit for plantation<ul id="11e211f5-fc1d-800a-9ac7-d472049dc46e" class="bulleted-list"><li style="list-style-type:circle">30 x 30 cm for seedling and branch cutting</li></ul><ul id="11e211f5-fc1d-80ed-99f5-e1fedc93ebf6" class="bulleted-list"><li style="list-style-type:circle">60 x 60 cm for offset and rhizome planting</li></ul></li></ul><ul id="11e211f5-fc1d-8029-91fd-c99347f46d2b" class="bulleted-list"><li style="list-style-type:disc">Time – before monsoon</li></ul><ul id="11e211f5-fc1d-80e8-a933-e90277240d66" class="bulleted-list"><li style="list-style-type:disc">Wedding – three times in first year, then two times</li></ul><ul id="11e211f5-fc1d-80a4-871a-fd5d731f6487" class="bulleted-list"><li style="list-style-type:disc">Soil loosening – two times a year</li></ul><ul id="11e211f5-fc1d-80a6-af0d-f3dbad254f23" class="bulleted-list"><li style="list-style-type:disc">Protect from fire and grazing</li></ul><ul id="11e211f5-fc1d-80be-8bcb-dc15645510ea" class="bulleted-list"><li style="list-style-type:disc">Irrigation in initial years</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Harvesting</summary><div class="indented"><p id="11e211f5-fc1d-80e5-928f-df5cc5fc3e2c" class="">Harvest only mature culms</p><ul id="11e211f5-fc1d-8039-ab27-c6dfc4bfdbc0" class="bulleted-list"><li style="list-style-type:disc">Usually found at center</li></ul><p id="11e211f5-fc1d-80fd-a493-ee6b90b88f47" class="">Select &gt; 3 year old culms</p><ul id="11e211f5-fc1d-8006-8389-ff7c62c27486" class="bulleted-list"><li style="list-style-type:disc">Felling intensity 70%</li></ul><ul id="11e211f5-fc1d-8068-99c9-cba8cb53375b" class="bulleted-list"><li style="list-style-type:disc">Return return 30% old culms to protect emerging culms</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">National bamboo mission 2006</summary><div class="indented"><ul id="11e211f5-fc1d-8068-9365-c5d7d5cdd5e4" class="bulleted-list"><li style="list-style-type:disc">Sector growth</li></ul><ul id="11e211f5-fc1d-803e-b884-d4d5ad0788cb" class="bulleted-list"><li style="list-style-type:disc">Product marketing</li></ul><ul id="11e211f5-fc1d-80cf-abf2-d1f1dc1c1b4e" class="bulleted-list"><li style="list-style-type:disc">Employment</li></ul><ul id="11e211f5-fc1d-80f8-b9a0-d4c5d464f12b" class="bulleted-list"><li style="list-style-type:disc">Increase area under cultivation</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Silviculture system</summary><div class="indented"><ul id="11f211f5-fc1d-80d1-aae7-d8a209026b47" class="toggle"><li><details open=""><summary>Culm selection system</summary><ul id="11f211f5-fc1d-8079-817e-c8b97261672f" class="bulleted-list"><li style="list-style-type:disc">Felling: on selection</li></ul><ul id="11f211f5-fc1d-802b-8cfe-ccf07e3808d3" class="bulleted-list"><li style="list-style-type:disc">Regeneration: new culms keep getting produced continuously</li></ul></details></li></ul><ul id="11f211f5-fc1d-8001-b0af-c7ba312aeaf4" class="toggle"><li><details open=""><summary>Regeneration method</summary><p id="11f211f5-fc1d-8090-809e-ceefb308c1f0" class="">By rhizomes</p><ul id="11f211f5-fc1d-801f-aa3c-f48bed7c9792" class="bulleted-list"><li style="list-style-type:disc">Sporadic flowering</li></ul><ul id="11f211f5-fc1d-804a-bf1b-ea18856b6fb1" class="bulleted-list"><li style="list-style-type:disc">gregarious flowering - all clumps in the area die, regeneration comes up profusely from the seeds → needs protection <ul id="11f211f5-fc1d-8087-8f23-df7e6fa6b1dc" class="bulleted-list"><li style="list-style-type:circle">rodents before germination</li></ul><ul id="11f211f5-fc1d-805c-bdc7-fe7866edc827" class="bulleted-list"><li style="list-style-type:circle">Cattle grazing after germination</li></ul></li></ul></details></li></ul><ul id="11f211f5-fc1d-8018-bf4d-ff2790671371" class="toggle"><li><details open=""><summary>Tending</summary><ul id="11f211f5-fc1d-8086-b76f-f12d1320771c" class="bulleted-list"><li style="list-style-type:disc">Doesn&#x27;t require weeding and cleaning as it grows very fast</li></ul><ul id="11f211f5-fc1d-801a-87a3-f67263e97ea5" class="bulleted-list"><li style="list-style-type:disc">But cleaning of clums to facilitate growth of new culms</li></ul></details></li></ul><ul id="11f211f5-fc1d-807d-89b6-d89159cc329c" class="toggle"><li><details open=""><summary>Crop Character</summary><p id="11f211f5-fc1d-8022-a3ce-c08f2dc26b40" class="">Uneven aged</p></details></li></ul><ul id="11f211f5-fc1d-808b-8c70-f8e60fd94412" class="toggle"><li><details open=""><summary>Felling/cutting cycle and felling rules</summary><ul id="11f211f5-fc1d-803e-b323-d901a098aa05" class="bulleted-list"><li style="list-style-type:disc">felling cycle of 3–4 years</li></ul><ul id="11f211f5-fc1d-8059-a0e4-e060bf6fdb05" class="toggle"><li><details open=""><summary>Rules</summary><ul id="11f211f5-fc1d-80af-854f-c018e857a57d" class="bulleted-list"><li style="list-style-type:disc">No cutting of 1–2 year-old culms</li></ul><ul id="11f211f5-fc1d-80f6-92d6-faaa4471024a" class="bulleted-list"><li style="list-style-type:disc">Retain some old bamboo to support immature culms</li></ul><ul id="11f211f5-fc1d-809c-8db9-c1b1f48733a4" class="bulleted-list"><li style="list-style-type:disc">No digging of rhizomes</li></ul><ul id="11f211f5-fc1d-8014-9439-d2915b69c5a7" class="bulleted-list"><li style="list-style-type:disc">Cutting<ul id="11f211f5-fc1d-80e0-9b06-d33ddb62c216" class="bulleted-list"><li style="list-style-type:circle">Minimum height – 15 cm (retain minimum 1 node)</li></ul><ul id="11f211f5-fc1d-8079-bf7d-c0c9f344d34d" class="bulleted-list"><li style="list-style-type:circle">Sharp instrument so that the stump does not split</li></ul><ul id="11f211f5-fc1d-800e-bd38-ee4cd882377a" class="bulleted-list"><li style="list-style-type:circle">Flowering – cut only seed has been shed</li></ul></li></ul></details></li></ul></details></li></ul><p id="11f211f5-fc1d-807a-b1df-c3f44d80bc94" class="">
+</p></div></details><p id="11f211f5-fc1d-801f-8e96-ef45ec361d16" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

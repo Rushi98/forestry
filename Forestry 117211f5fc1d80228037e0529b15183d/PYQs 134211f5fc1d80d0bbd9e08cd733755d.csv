@@ -1,0 +1,410 @@
+﻿Paper,Year,Question Number,Question,Tags
+IIA,2019,1a,Explain the role of normal series of age gradation and age class in forest management.,
+IA,2019,1a,Write scientific names of four major tree species in each of Southern Tropical Semi-Evergreen Forests and Northern Tropical Wet-Evergreen Forests.,
+IIA,2020,1a,What are the key decision parameters in an uneven-aged forest management ?,
+IA,2020,1a,Define silviculture. Relate the applications of silviculture to different branches of Forestry.,
+IIA,2021,1a,"Describe the criteria and indicators of sustainable forest management. ",
+IA,2021,1a,Why is it difficult to carry out afforestation programmes in cold deserts ?,
+IIA,2022,1a,"What is the purpose of classifying forests ? How are the forests classified
+for silvicultural management ?",
+IA,2022,1a,Improvement felling is not considered as a silvicultural system. Why?,
+IIA,2023,1a,Differentiate between forest working plan and forest management plan.,
+IA,2023,1a,"The shoot portion of seedlings of some tree species like Sal and Sandal,
+under natural regeneration, keeps on drying year after year but the roots remain alive. Discuss.",
+IIA,2019,1b,Describe the significance of working plan and working scheme in conserving biodiversity.,
+IA,2019,1b,"Write a brief account of the phenology, silvicultural characters and methods of regeneration for Dalbergia sissoo.",
+IIA,2020,1b,Why should GIS be considered as a ‘Pure Science’ ?,
+IA,2020,1b,Frost resistance in trees depends on the internal and external factors. Explain.,
+IIA,2021,1b,“Forestry enterprise is peculiar compared to other enterprises.” Justify.,
+IA,2021,1b,What factors are considered important while choosing a species under avenue plantation ?,
+IIA,2022,1b,Describe the graphical method of preparation of volume table.,
+IA,2022,1b,What are the major threats to mangrove forests?,
+IIA,2023,1b,What is point sampling? How is it used in forest enumeration?,
+IA,2023,1b,Calculate the quantity of seeds (kg) required to establish a teak plantation over an area of 10 ha.,
+IIA,2019,1c,Explain Metzger’s theory of tree form and its significance in volume calculation.,
+IA,2019,1c,Explain the modern nursery techniques for production of quality planting stock.,
+IIA,2020,1c,How does collaborative forest management ensure community and household resilience ?,
+IA,2020,1c,Explain the factors which affect the length of regeneration period in a periodic block.,
+IIA,2021,1c,"“Working plan is a basic prerequisite for management of forest division.”
+Discuss.",
+IA,2021,1c,‘An appropriate silvicultural system promotes better regeneration of forest stand.’ Comment.,
+IIA,2022,1c,"Describe the major considerations of road alignment in the plains. Explain the terms (i) Gradient, (ii) Camber, and (iii) Drainage related to roads in the hills.",
+IA,2022,1c,How is the regeneration map of moist deciduous forest prepared?,
+IIA,2023,1c,What are maps? How are they helpful in management of forests?,
+IA,2023,1c,What are mangroves ? Write their ecological implications.,
+IIA,2019,1d,Define bridge and explain different types of bridges with sketches.,
+IA,2019,1d,Discuss the factors which influence the choice between natural and artificial regeneration.,
+IIA,2020,1d,What are the recommended practices for strategic harvest planning ?,
+IA,2020,1d,Write the adaptive characteristics of plant species of cold desert.,
+IIA,2021,1d,"Differentiate Stand density and Canopy density. Mention Canopy
+density classification as per Forest Survey of India.",
+IA,2021,1d,Are non-native tree species an option or a threat in forest ecosystem/plantation under climate change ?,
+IIA,2022,1d,“Success of commercial forest plantations depends on site-specific and strategic planning.” Justify the statement.,
+IA,2022,1d,Explain the techniques for upgradation and hardening of nursery seedlings of Lagerstroemia lanceolata.,
+IIA,2023,1d,"Explain briefly the reference point for measurement of diameter and girth of
+tree species.",
+IA,2023,1d,What is frost hole ? How does frost affect regeneration ?,
+IIA,2019,1e,Describe the procedure for estimating volume of standing and felled tree.,
+IA,2019,1e,What are the different types of grafting ? Explain ‘Cleft Grafting’ with neat sketches.,
+IIA,2020,1e,Construction and maintenance of forest roads can be considered as an essential investment of forest growth. Comment.,
+IA,2020,1e,Describe the methods of artificial regeneration of Tamarindus indica.,
+IIA,2021,1e,"Explain the terms (i) True meridian, (ii) Magnetic meridian, (iii) Reduced bearing, and (iv) Fore and back bearing.",
+IA,2021,1e,Do the trees of same species have different response to light conditions at different ages ?,
+IIA,2022,1e,"Explain (i) Artificial Form Factor, (ii) Absolute Form Factor, (iii) Normal
+Form Factor, and (iv) Form Quotient.",
+IA,2022,1e,Discuss the significance of bamboo flowering.,
+IIA,2023,1e,What are the objectives and principles of forest management?,
+IA,2023,1e,"Write the botanical names of three tree species each of - 
+(i) non-coppicers, 
+(ii) poor coppicers, 
+(iii) good (fair) coppicer, and 
+(iv) strong coppicers",
+IIA,2019,2a,Describe the method for calculation of normal growing stock with the help of yield table.,
+IA,2019,2a,Write the special characteristics of Indian Irregular Shelterwood System and differentiate it from Uniform System.,
+IIA,2020,2a,"What are the factors that affect a stand structure ? Describe in brief the DBH distribution in even, uneven and multi-aged normal forest stands.",
+IA,2020,2a,"Describe the following terms :
+(i) Dominant
+(ii) Dominated
+(iii) Crop height
+(iv) Top height
+(v) Hardening",
+IIA,2021,2a,"Define Geoinformatics. What are its elements ? Explain its role in
+management and monitoring of forest resources.",
+IA,2021,2a,What is the ecological significance of cold deserts ? How do plants adapt and survive under cold and harsh desert conditions ? Provide a list of common native species of a cold desert.,
+IIA,2022,2a,"Define Forest Management and write its objectives. Discuss in brief the
+major activities related to forest management.",
+IA,2022,2a,"Differentiate between coppice with standards and coppice with reserves.
+Explain in detail the coppice with two rotations and pollard system.",
+IIA,2023,2a,Describe the methods for assessment of growing stock.,
+IA,2023,2a,"Describe the seed collection and storage methods of the following tree
+species :
+(i) Santalum album
+(ii) Chukrasia tabularis
+(iii) Cedrus deodara
+(iv) Azadirachta indica
+(v) Dalbergia latifolia",
+IIA,2019,2b,What is compartment? Why is its study and description required when making working plan?,
+IA,2019,2b,What are the characteristic features of cold deserts of the Himalayas ? Write the scientific names of any five tree species of cold deserts.,
+IIA,2020,2b,What are the classical methods for determining the allowable cut ?,
+IA,2020,2b,"Describe the reforestation techniques of mangrove forests. Explain the
+following mangrove habitats :
+(i) Deltaic mangrove habitat
+(ii) Coastal mangrove habitat",
+IIA,2021,2b,"What are the advantages and disadvantages of Plane table surveying? Describe Radiation, Intersection, Traversing and Resection methods of Plane table surveying.",
+IA,2021,2b,"Discuss the phenology, silvicultural characters and regeneration
+methods of :
+
+(i) Gmelina arborea
+(ii) Pinus roxburghii",
+IIA,2022,2b,"Write the general principles of surveying. Describe (i) direct methods of chaining on sloping grounds, and (ii) chaining when vision is obstructed,
+but chaining is free.",
+IA,2022,2b,Describe the characteristics of cold desert. How does choice of species play an important role in cold desert afforestation programme? How are cold desert areas afforested?,
+IIA,2023,2b,How does yield table differ from volume table? Describe the contents of yield table with justifications.,
+IA,2023,2b,"Write the factors which affect the natural regeneration of Sal (Shorea
+robusta). Discuss the procedure to obtain natural regeneration of moist Sal forests.",
+IIA,2019,2c,Explain the principles of height-measuring instruments giving suitable example.,
+IA,2019,2c,"Discuss in detail, the silviculture of Albizia lebbeck.",
+IIA,2020,2c,What are the factors that cause foundation failure during construction of a forest building?,
+IA,2020,2c,"Give a brief account of the silvicultural characters and regeneration methods
+for the following species :
+(i) Acacia catechu
+(ii) Populus deltoides",
+IIA,2021,2c,"Define Working Circle. Mention different types of working circles
+generally constituted in India. Explain Biodiversity working circle.",
+IA,2021,2c,"Elucidate the pattern of felling and mode of regeneration adopted under
+selection system of management.",
+IIA,2022,2c,“Maps play a significant role in working plan preparation.” Explain.,
+IA,2022,2c,"Explain the following :
+(i) Selection felling
+(ii) Regeneration felling
+(iii) Selective felling
+(iv) Enrichment planting",
+IIA,2023,2c,What is village forest committee? Explain its role in forest management.,
+IA,2023,2c,"What are accessory systems ? Describe the two-storeyed high forest
+system.",
+IIA,2019,3a,Give a list of survey methods adopted in forests. Describe the survey of forest when a river comes in the way of survey line.,
+IA,2019,3a,“Felling height and felling intensity play a major role in the sustainability of clumps of bamboo species.” Comment.,
+IIA,2020,3a,What are the applications of remote sensing in forestry?,
+IA,2020,3a,"Define afforestation. Discuss in brief the afforestation techniques, including
+the choice of species, for ravine lands.",
+IIA,2021,3a,Explain French method (1883) of yield regulation in irregular forests. What are its advantages and disadvantages ?,
+IA,2021,3a,What do you mean by tending operations ? Enumerate various tending operations carried out in forest crops. Discuss improvement felling.,
+IIA,2022,3a,Describe the outline and the components of the Preliminary Working Plan Report.,
+IA,2022,3a,"How are nurseries classified in India? What is a clonal nursery? Explain the
+nursery technique for Casuarina equisetifolia.",
+IIA,2023,3a,Give a list of materials used in construction of building and describe the characteristics of any two materials.,
+IA,2023,3a,"Write the economic importance of the following tree species :
+(i) Acacia catechu
+(ii) Casuarina equisetifolia
+(iii) Hardwickia binata
+(iv) Butea monosperma
+(v) Tamarindus indica",
+IIA,2019,3b,What is point sampling? How is it helpful to find out basal area of a forest?,
+IA,2019,3b,Explain the Alternative-Strip System and the Clear-Strip System. Write the advantages and disadvantages of Clear Felling System.,
+IIA,2020,3b,What are the basic details of an engineering design of a timber bridge ? What steps should be taken to ensure its durability ?,
+IA,2020,3b,Define coppice with standard system. What are the advantages and disadvantages? Differentiate it from coppice with two-rotation system.,
+IIA,2021,3b,What is Site Quality Index ? How does it differ from fractional site quality ? Explain any one method used for developing site quality classes with the help of neat diagram.,
+IA,2021,3b,"What are the characteristics and significance of mangrove forests ?
+Discuss important species formation in mangrove forests.",
+IIA,2022,3b,Explain the Single-Line and Double-Line Field Books with neat sketches. Mention the steps followed in the field work of Chain Survey.,
+IA,2022,3b,"What is precision silviculture? Explain the silvicultural techniques for the
+following :
+(i) Dalbergia sissoo
+(ti) Eucalyptus tereticornis",
+IIA,2023,3b,Describe the role of MAI (Mean Annual Increment) and CAI (Current Annual Increment) to decide rotation of a forest stand.,
+IA,2023,3b,What are the sequences of operations followed in mangrove afforestation ? Discuss in detail the fishbone technique of mangrove plantation.,
+IIA,2019,3c,Explain concrete and write the characteristics of good concrete mixture.,
+IA,2019,3c,"What are the major causes of degradation of mangrove forests ? Discuss in brief, the methods of rehabilitation of degraded mangroves.",
+IIA,2020,3c,What are the socio-ecological implications of modifying rotation lengths in forestry ?,
+IA,2020,3c,"Write down the presowing seed treatments for the following tree species :
+(i) Tectona grandis
+(ii) Santalum album
+(iii) Dalbergia sissoo
+(iv) Albizia lebbeck
+(v) Acacia nilotica",
+IIA,2021,3c,What is forest regeneration survey map ? How is it useful in management of natural forests ?,
+IA,2021,3c,"Why is grading operation of nursery seedlings essential for successful
+forest plantations ?",
+IIA,2022,3c,"“Working Plan is a document to enforce systematic, obligatory and
+mandatory regulations for continuous management of a given forest.” Discuss.",
+IA,2022,3c,Is coastal rehabilitation using mangrove species a success? Explain the plantation technique for degraded mangrove forest.,
+IIA,2023,3c,Describe the role of working plan in forest conservation.,
+IA,2023,3c,Who developed the Andaman Canopy Lifting Shelterwood System ? Describe the different operations being followed in the system.,
+IIA,2019,4a,What is progressive yield? How is annual yield obtained in a forest worked with periodic blocks method?,
+IA,2019,4a,Draw a schematic diagram showing altitudinal zonation of forest vegetation.,
+IIA,2020,4a,What are the objectives of forest surveying ? How does topographic survey aid in forest planning and management?,
+IA,2020,4a,"In India, large tracts of mixed even or uneven aged forests have been degraded due to biotic interference. Suggest the method and measures to improve their condition and composition.",
+IIA,2021,4a,"Define rotation of maximum volume production. Explain the method for
+fixing up of rotation of maximum volume production with the help of
+neat diagram.",
+IA,2021,4a,"What are the conditions on which the choice of a particular silvicultural
+system to be adopted for specific species in any locality depends ?",
+IIA,2022,4a,"“Application of Remote Sensing and GIS helps in continuous forest cover
+monitoring and efficient forest management activities.” Explain with
+examples.",
+IA,2022,4a,"Explain the silvicultural practices that help in the modification of site factors
+in forestry.",
+IIA,2023,4a,"Describe the importance of forest management. How will it be operated
+in forest plantations?",
+IA,2023,4a,What is a cold desert ? Describe the distribution pattern of cold desert species in India. How are cold desert areas afforested ?,
+IIA,2019,4b,Describe the role of remote sensing and GIS in monitoring forest resources.,
+IA,2019,4b,Explain different grades of thinning. Discuss in brief the thinning practices adopted for teak plantations.,
+IIA,2020,4b,A well-defined working plan is crucial for sustainable management of forests and biodiversity. Write your answer in brief in the light of National Working Plan Code 2014.,
+IA,2020,4b,Enumerate the objectives of management of canal plantations. Explain the silvicultural systems to manage them.,
+IIA,2021,4b,"Briefly explain the steps involved in preparation of working plan according to National Working Plan Code, 2014.",
+IA,2021,4b,"Elucidate the distribution, nursery techniques and economic importance
+of :
+
+(i) Cedrus deodara
+(ii) Acacia catechu
+(iii) Casuarina equisetifolia",
+IIA,2022,4b,"Describe the tangent method used to calculate height of trees on (i) Level ground, and (ii) Sloping ground.",
+IA,2022,4b,"Differentiate between thinning cycle and thinning intensity. Why is thinning
+essential for the management of forest stand? Describe the merits and
+demerits of French thinning.",
+IIA,2023,4b,Describe regeneration survey in natural forest and explain the significance of regeneration stock map.,
+IA,2023,4b,What is clear felling system ? Describe the pattern of felling and methods of obtaining regeneration under clear felling system.,
+IIA,2019,4c,What is brick? Describe different types of bricks giving their characteristics.,
+IA,2019,4c,"Give a brief account of origin and natural distribution of the following :
+(i) Adina cordifolia
+
+(ii) Cedrus deodara
+
+(iii) Santalum album",
+IIA,2020,4c,How does slope aspect impact forest stand characteristics and soil properties ?,
+IA,2020,4c,Describe the various causes of degradation of mangrove forests. Discuss the factors responsible for mangrove species regeneration and growth. Write the scientific names of five woody shrubs/tree species of cold desert.,
+IIA,2021,4c,Describe structure of Suspension Bridge and Cantilever Bridge.,
+IA,2021,4c,How are forest sites classified on the basis of vegetation ?,
+IIA,2022,4c,“Participatory Forest Management is a success.” Illustrate with examples.,
+IA,2022,4c,"What is root-shoot cutting? Write the names of five tree species which are
+propagated by this method.",
+IIA,2023,4c,What do you understand by bridges and culverts? Write the types of any two bridges with sketches.,
+IA,2023,4c,"Explain the following :
+(i) Lignotuber
+(ii) Root sucker
+(iii) Vermiculite
+(iv) Buttresses
+(v) Ortet and Ramet",
+IIB,2019,5a,Describe the features and importance of clonal parks in forest conservation.,
+IB,2019,5a,“Agroforestry is a better land use system for climate change mitigation and adaptation.” Justify.,
+IIB,2020,5a,How does shifting cultivation support community livelihood and biodiversity conservation ?,
+IB,2020,5a,"What is meant by accompanied and unaccompanied clonal seed orchards?
+Why are the gains from the two types so different?",
+IIB,2021,5a,"Explain the terms :
+(i) Cation Exchange Capacity
+(ii) Salinity and Alkalinity",
+IB,2021,5a,What are the impacts of COVID-19 pandemic on environment and biodiversity ?,
+IIB,2022,5a,What are biotic and abiotic stresses on trees ? Explain the responses of trees to these stresses.,
+IIB,2023,5a,Describe the major attributes of forest ecosystem.,
+IB,2023,5a,"(a) Explain the role of windbreaks and shelterbelts in Agroforestry. Name
+two tree species for each.",
+IIB,2019,5b,What is Reduced Impact Logging (RIL)? What is its composition? Explain the benefits of RIL.,
+IB,2019,5b,"Briefly discuss the aims, objectives and scope of Urban Forestry in India. “Soil is an interface of air, minerals, water and life.” Comment.",
+IIB,2020,5b,"What is the direct role of the Biological Diversity Act, 2002 in conservation of wildlife ?",
+IB,2020,5b,“Agroforestry system conserves soil and moisture.” Justify the statement.,
+IIB,2021,5b,What is meant by climax in ecological succession ? Give an example and describe types of ecological succession.,
+IB,2021,5b,How do the ownership rights of forests influence the success of joint forest management ?,
+IIB,2022,5b,Mention any eight specialized uses of wood with examples.,
+IIB,2023,5b,What are gums? How do they differ from resins? Write the botanical names of two plants of each.,
+IB,2023,5b,Discuss the significance of exotics in tree improvement. Name four exotic tree species.,
+IIB,2019,5c,Define Non-Timber Forest Products (NTFPs). Explain their importance to human societies and economy.,
+IB,2019,5c,What do you mean by deforestation ? Explain the major causes of deforestation.,
+IIB,2020,5c,How does inflation influence forest goods ? Briefly explain the types of inflation that directly influence the prices of forest goods.,
+IB,2020,5c,What are the roles of forest in watershed management?,
+IIB,2021,5c,"What is REDD+ ? How does clean development mechanism help in
+sustainable management of forests ?",
+IB,2021,5c,"How can watershed management enhance and promote sustainable
+integrated water resource management ?",
+IIB,2022,5c,"Explain the role of renewable energy sources like solar energy in wood
+seasoning.",
+IIB,2023,5c,Write the components of vehicular air pollution and list the damages caused to roadside trees.,
+IB,2023,5c,How does moisture influence the soil formation and growth of vegetation?,
+IIB,2019,5d,Describe how controlled fire can be used as a tool in forest management.,
+IB,2019,5d,What are the objectives of tree improvement ? Explain in detail the five essential steps of tree improvement.,
+IIB,2020,5d,What are the rules laid down for efficient felling ? Classify the timbers based on industrial use.,
+IB,2020,5d,Write the tangible and intangible benefits of agroforestry.,
+IIB,2021,5d,Unscientific harvesting of NTFPs has led to depletion of NTFP resources. Discuss.,
+IB,2021,5d,"How does soil organic matter decomposition influence forest
+productivity ?",
+IIB,2022,5d,Describe the principles of Ayurvedic system of treatment. Write scientific names of five common tree species used in Ayurveda.,
+IIB,2023,5d,Write the botanical names of six tree species yielding essential oil.,
+IB,2023,5d," Write a note on the gender issues in Joint Forest Management (JFM).",
+IIB,2019,5e,Discuss various channels for marketing of forest products.,
+IB,2019,5e,Why is Participatory Rural Appraisal (PRA) technique important for planning and execution of Joint Forest Management (JFM) activities ? Explain the tools and techniques of PRA.,
+IIB,2020,5e,What is the significance of wildlife in today's perspective ? Discuss in brief about the components of wildlife ecology.,
+IB,2020,5e,Describe the in situ biodiversity conservation with reference to Biosphere Reserves.,
+IIB,2021,5e,"Mention different methods of valuation of intangible services from forest
+ecosystem and explain any one.",
+IB,2021,5e,How do agroforestry woody perennials protect the understorey crops ?,
+IIB,2022,5e,"Write the provisions of the Indian Forest Act, 1927, — to declare village forests and protected forests.",
+IIB,2023,5e,Explain the fundamental principles involved in forest economics.,
+IB,2023,5e,Greenhouse gases result in global warming. Discuss.,
+IIB,2019,6a,Define wood. Explain the microscopic/anatomical features which aid in identification of timber species in detail.,
+IB,2019,6a,"Define :
+(i) Variation
+(ii) Selection differential
+(iii) Selection intensity
+(iv) Heritability",
+IIB,2020,6a,Discuss the role of forest resources in the Indian economy. Suggest suitable storage methods for wood or other forest produce and their management strategies.,
+IB,2020,6a,What do you mean by population diversity? What are the different methods to measure biodiversity?,
+IIB,2021,6a,Write the general principles of wood seasoning. How is electrical kiln seasoning advantageous over air seasoning ?,
+IB,2021,6a,Explain the role of trees and forests in environmental conservation.,
+IIB,2022,6a,"Trace the history of logging in India. Explain how mechanization in
+harvesting and extraction helps in reducing the wastage and improving
+efficacy of logging.",
+IIB,2023,6a,What is cost-benefit? Explain demand and supply with respect to forestry.,
+IB,2023,6a,Discuss the role of Agroforestry in the well-being of mankind.,
+IIB,2019,6b,"Describe various physiological mechanisms underlying drought resistance, drought tolerance and drought avoidance in forest species.",
+IB,2019,6b,How do you increase the genetic gain for a given trait in tree breeding ?,
+IIB,2020,6b,"What is the need to protect the forests ? Enumerate the major threats responsible for forest injuries. Suggest suitable preventive and protective measures to safeguard the forest wealth. ",
+IB,2020,6b,“Taungya cultivation is a type of traditional agroforestry system.” Justify the statement.,
+IIB,2021,6b,"Write the provisions of Sections 35, 37 and 38 under the Indian Forest Act, 1927, applied to control over forests and land not being the property of the Government.",
+IB,2021,6b,Discuss the problems of commons in social forestry. Suggest some effective strategies to overcome these problems.,
+IIB,2022,6b,"Discuss the components of a desert ecosystem. Write steps to control
+shifting of sand dunes.",
+IIB,2023,6b,"Explain different types of biodiversity and describe various methods for its
+management.",
+IB,2023,6b,Explain the theory of humus formation predominant in forested vegetation.,
+IIB,2019,6c,What is controlled grazing? Describe how it helps in the better management of forest pasture land.,
+IB,2019,6c,Write the characteristics of watershed. Explain the factors affecting watershed management.,
+IIB,2020,6c,")Why is carbon cycle important ? How do human activities affect carbon cycle? ",
+IB,2020,6c,What are the different factors governing the successful introduction of an exotic tree species?,
+IIB,2021,6c,Justify the statement “Wild animals are one of the biotic components of the forest ecosystem.” How do they help in forest regeneration ?,
+IB,2021,6c,"How does agroforestry promote sustainable livelihood of marginal
+farmers ?",
+IIB,2022,6c,Explain the salvage operations for plantation trees after natural disasters,
+IIB,2023,6c,"Write on carbon sequestration and discuss the role of afforestation in absorptions of carbon dioxide (CO,) from atmosphere.",
+IB,2023,6c,What is deforestation ? Discuss the impact of deforestation on the environment.,
+IIB,2019,7a,What is forest valuation? Write its objectives and briefly explain the methods of forest valuation.,
+IB,2019,7a,What are the characteristics of saline and alkali soils ? Explain the reclamation of saline and alkali soils with suitable tree species.,
+IIB,2020,7a,"What is the significance of Afforestation and Reforestration to the ecosystem ? How are the National Afforestation Programmme, Green India Mission and Forest Fire Prevention and Management Scheme helping in restoration of forests ? ",
+IB,2020,7a,"Describe the advantages, peculiar problems and various steps in tree improvement. ",
+IIB,2021,7a,Write the scientific names of ten medicinal plants and their uses.,
+IB,2021,7a,"What is the relationship between air pollutants and climate change ? How does forest vegetation abate different types of pollutants ? Describe Air (Prevention and Control of Pollution) Act, 1981 in relation to pollution management. Suggest name of suitable plant species.",
+IIB,2022,7a,What do you understand by human — wildlife conflict ? Explain with examples.,
+IIB,2023,7a,What constitute fire environment in a forest? Describe different types of forest fires and write the significance of fire line.,
+IB,2023,7a,Enlist the problems faced by the tribal communities in India.,
+IIB,2019,7b,What are particle boards? Explain the features of different types of particle boards.,
+IB,2019,7b,List out the greenhouse gases that contribute to Global Warming. What are the effects of global warming ? Explain the role of trees and forests in combating environmental degradation.,
+IIB,2020,7b,"What are the structural and functional changes that occur in a forest ecosystem during succession ? ",
+IB,2020,7b,"What are the different soil types found in India? Identify five tree species
+growing each in Alluvial soils, Red soils, Black cotton soils and Arid and desert soils.",
+IIB,2021,7b,"Describe the provisions of Sections (3 — 27) of the Indian Forest Act, 1927 applied to declare any forest land or wasteland as a Reserve Forest over which the Government has proprietary rights.",
+IB,2021,7b,How do you differentiate a springshed from a watershed ? Explain how a healthy springshed can ensure a better hydrological cycle of an area.,
+IIB,2022,7b,"Write the salient features of India’s National Forest Policy, 1988. Justify
+the statement “India needs a revision of Forest Policy.”",
+IIB,2023,7b,Compare different types of composite wood. Name the tree species which are mainly preferred for it. Write the future prospects of composite wood industry in the country.,
+IB,2023,7b,Explain the benefits of watershed management.,
+IIB,2019,7c,What are ecological pyramids? Explain different types. Mention the implications of concept of ecological pyramids in understanding forest ecosystems.,
+IB,2019,7c,What are Multipurpose Tree Species (MPTs) ? Explain their role in social forestry.,
+IIB,2020,7c,"What do you understand by forest valuation ? Discuss in brief. Describe various valuation techniques for forests. ",
+IB,2020,7c,"Write the scientific names of any five multipurpose tree species suitable for
+agroforestry system in (i) Arid and Semi-arid and (ii) Sub-tropical Hills of India.",
+IIB,2021,7c,What is the role of forest plantations in carbon sequestration ?,
+IB,2021,7c,What are the advantages and disadvantages of tree-breeding methods over biotechnological methods ?,
+IIB,2022,7c,"“Increasing usage of composite woods necessitates the need for increased
+raw material from plantations of short rotation trees.” Explain.",
+IIB,2023,7c,"Explain rotational grazing and discuss its significance to restore natural
+regeneration.",
+IB,2023,7ci,Define heritability and its types. How does Narrow Sense Heritability differ from Broad Sense Heritability ?,
+IB,2023,7cii,Discuss the scope and future of hybrids in applied tree improvement.,
+IIB,2019,8a,Write in detail regarding the appointment of authorities and restrictions of hunting of wild animals under the Wildlife (Protection) Act of 1972.,
+IB,2019,8a,"Name the two phases of tree improvement. As a tree breeder, how do you use these two phases simultaneously to meet the short-term demand of wood based industries and the long-term demand of establishing seed orchards for a given tree species.",
+IIB,2020,8a,"Describe the process of wood formation. Write in detail about the physical, chemical and mechanical properties of wood.",
+IB,2020,8a,What are orthodox and recalcitrant seeds? Give five examples for each of these categories of seeds.,
+IIB,2021,8a,"What are gums, resins, oleoresins and gum resins ? Classify and give at least two examples under each group.",
+IB,2021,8a,"Give an overview of forest genetic resources and gene conservation
+programmes in India. Suggest effective practices for sustainable
+management for quality improvement of Indian forests.",
+IIB,2022,8a,"Describe the provisions of the Forest (Conservation) Act, 1980 on
+(i) restriction on the de-reservation of forest land for non-forest purpose,
+and (ii) diversion of forest land for regularization of encroachment.",
+IIB,2023,8a,"Discuss the salient features of the Wildlife (Protection) Act, 1972 and write its significance in dealing with wildlife offences.",
+IB,2023,8a,What are biofertilizers ? Enlist the factors associated with the mycorrhizal development in trees. Discuss the types of mycorrhizae.,
+IIB,2019,8b,List different systems and methods of sales of forest produces. What are the different methods of sales adopted in State forest departments?,
+IB,2019,8b,Explain the concept of sustainable development. Discuss in brief the agenda for sustainable development.,
+IIB,2020,8b,Write in detail about the historical background of forest policies in India and their aims. Describe in brief about the organization of forest sector in India.,
+IB,2020,8b,Explain the methodology for Environmental Impact Assessment.,
+IIB,2021,8b,"What are holotype, neotype, lectotype and syntype of plant specimens ?
+Describe the role of arboreta and clonal parks in conservation of
+biodiversity.",
+IB,2021,8b,How does crop rotation and mixed farming improve soil productivity ?,
+IIB,2022,8b,Describe the adverse climatic factors causing damage to forests.,
+IIB,2023,8b," Explain the present status, scope and constraints of biofuel production in
+India. Write the botanical names of five tree-borne oilseeds.",
+IB,2023,8b,Discuss the significance of variation in tree improvement.,
+IIB,2019,8c,Describe the causes of deforestation. What are the measures to be taken for the control of deforestation?,
+IB,2019,8c,What are pedogenic processes ? Explain the important processes of soil formation.,
+IIB,2020,8c,How has the National Forest Policy of 1988 changed the national scenario? Describe in brief. Highlight some major achievements in relation to the above policy.,
+IB,2020,8c,"Write short notes on the following :
+(i) Soil texture and structure
+(ii) Soil organic matter
+(iii) Carbon-nitrogen ratio",
+IIB,2021,8c,What is controlled burning ? How does it help in improving forest regeneration ?,
+IB,2021,8c,Discuss the role of tree domestication in biodiversity conservation.,
+IIB,2022,8c,"What are Commensalism, Amensalism, Mutualism and Symbiosis ? Write the functions of an ecosystem.",
+IIB,2023,8c,What are the different types of plant classification systems? Name the one which is mostly followed in Indian herbaria.,
+IB,2023,8c,What is Environmental Impact Assessment (EIA) ? Describe the activities involved and general procedure in EIA.,
+,2019,,,
+IB,2022,,"Discuss the important considerations that are made before choosing a tree
+improvement approach.",
+IB,2022,,"What are the objectives of progeny testing? Discuss the advantages and
+disadvantages of different methods of progeny testing.",
+IB,2022,,"Discuss the key problems to expand tree cover in urban areas. Explain the
+role of urban trees in abating soil pollutants.",
+IB,2022,,Give a detailed profile of a soil showing various zones and explain the function of each soil zone.,
+IB,2022,,Explain the role of mycorrhizae in plant growth and development of forest trees.,
+IB,2022,,Explain the principles of bioengineering measures for soil and water conservation. Write in brief four common bioengineering techniques for hill and slope stabilization works using plants.,
+IB,2022,,How do tree and shrub mass influence the mitigation of particulate matter and noise in urban settings?,
+IB,2022,,What are the constraints in the value chain under industrial agroforestry?,
+IB,2022,,"What are the differences between traditional agroforestry and ethno-
+agroforestry? Explain in brief below-ground and above-ground tree-crop
+interactions in agroforestry systems.",
+IB,2022,,"Why is conventional breeding that has a much better role to play in genetic
+improvement of trees not given much importance in research?",
+IB,2022,,How does C : N ratio of plant residue in soil influence the rate of decomposition and nitrogen availability to plants?,
+IB,2022,,How does watershed influence the ecology and socio-economic development of a region?,
+IB,2022,,How do sacred groves help in conservation of biodiversity?,
+IB,2022,,How does agroforestry help to achieve the United Nations’ Sustainable Development Goals?,
+,,,,
+,,,,
